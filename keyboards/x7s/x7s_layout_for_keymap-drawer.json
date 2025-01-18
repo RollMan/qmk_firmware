@@ -1,5 +1,5 @@
 {
-    "_comment", "The layout definition for a keyboard visualizer, keymap-drawer.streamlit.app",
+    "_comment": "The layout definition for a keyboard visualizer, keymap-drawer.streamlit.app",
     "url": "https://github.com/foostan/crkbd",
     "layouts": {
         "LAYOUT_split_3x5_3": {
