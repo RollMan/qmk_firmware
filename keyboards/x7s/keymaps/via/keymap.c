@@ -2,23 +2,32 @@
 #include <stdio.h>
 #include "leds.c"
 
-const uint16_t PROGMEM alt_combo[] = {LT(4, KC_DEL), MT(KC_LSFT, KC_TAB), COMBO_END};
-const uint16_t PROGMEM super_combo[] = {LT(4, KC_DEL), LT(1, KC_ESC), COMBO_END};
 const uint16_t PROGMEM shift_combo_l[] = {KC_G, KC_B, COMBO_END};
+const uint16_t PROGMEM ctrl_combo_l[] = {KC_F, KC_V, COMBO_END};
+const uint16_t PROGMEM alt_combo_l[] = {KC_D, KC_C, COMBO_END};
+const uint16_t PROGMEM super_combo_l[] = {KC_S, KC_X, COMBO_END};
 const uint16_t PROGMEM shift_combo_r[] = {KC_H, KC_N, COMBO_END};
+const uint16_t PROGMEM ctrl_combo_r[] = {KC_J, KC_M, COMBO_END};
+const uint16_t PROGMEM alt_combo_r[] = {KC_K, KC_COMM, COMBO_END};
+const uint16_t PROGMEM super_combo_r[] = {KC_L, KC_DOT, COMBO_END};
 
 combo_t key_combos[] = {
+    COMBO(shift_combo_l, KC_LSFT),
+    COMBO(ctrl_combo_l, KC_LCTL),
+    COMBO(alt_combo_l, KC_LALT),
+    COMBO(super_combo_l, KC_LGUI),
     COMBO(shift_combo_r, KC_LSFT),
-    COMBO(alt_combo, KC_LALT),
-    COMBO(super_combo, KC_LGUI),
+    COMBO(ctrl_combo_r, KC_LCTL),
+    COMBO(alt_combo_r, KC_LALT),
+    COMBO(super_combo_r, KC_LGUI),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,          /*||*/  KC_Y,         KC_U,          KC_I,         KC_O,           KC_P,
         KC_A, KC_S, KC_D, KC_F, KC_G,          /*||*/  KC_H,         KC_J,  KC_K, KC_L,   KC_SCLN,
-        KC_Z,         KC_X, KC_C,         KC_V,         KC_B,          /*||*/  KC_N,         KC_M,          KC_COMM,      MT(MOD_LSFT, KC_DOT), KC_SLSH,
-  XXXXXXX, XXXXXXX, LT(1,KC_ESC), MT(MOD_LCTL,KC_SPC), MT(MOD_LSFT, KC_TAB),  /*||*/  LT(3,KC_ENT), LT(2,KC_BSPC), LT(4,KC_DEL), XXXXXXX, XXXXXXX
+        KC_Z,         KC_X, KC_C,         KC_V,         KC_B,          /*||*/  KC_N,         KC_M,          KC_COMM,     KC_DOT, KC_SLSH,
+  XXXXXXX, XXXXXXX, LT(1,KC_ESC), KC_SPC, KC_TAB,  /*||*/  LT(3,KC_ENT), LT(2,KC_BSPC), LT(4,KC_DEL), XXXXXXX, XXXXXXX
     ),
 
     [1] = LAYOUT(
