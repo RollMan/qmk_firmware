@@ -4,8 +4,11 @@
 
 const uint16_t PROGMEM alt_combo[] = {LT(4, KC_DEL), MT(KC_LSFT, KC_TAB), COMBO_END};
 const uint16_t PROGMEM super_combo[] = {LT(4, KC_DEL), LT(1, KC_ESC), COMBO_END};
+const uint16_t PROGMEM shift_combo_l[] = {KC_G, KC_B, COMBO_END};
+const uint16_t PROGMEM shift_combo_r[] = {KC_H, KC_N, COMBO_END};
 
 combo_t key_combos[] = {
+    COMBO(shift_combo_r, KC_LSFT),
     COMBO(alt_combo, KC_LALT),
     COMBO(super_combo, KC_LGUI),
 };
