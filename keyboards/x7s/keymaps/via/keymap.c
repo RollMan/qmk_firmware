@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include "leds.c"
 
-const uint16_t PROGMEM shift_combo_l[] = {KC_G, KC_B, COMBO_END};
-const uint16_t PROGMEM ctrl_combo_l[] = {KC_F, KC_V, COMBO_END};
-const uint16_t PROGMEM alt_combo_l[] = {KC_D, KC_C, COMBO_END};
-const uint16_t PROGMEM super_combo_l[] = {KC_S, KC_X, COMBO_END};
-const uint16_t PROGMEM shift_combo_r[] = {KC_H, KC_N, COMBO_END};
-const uint16_t PROGMEM ctrl_combo_r[] = {KC_J, KC_M, COMBO_END};
-const uint16_t PROGMEM alt_combo_r[] = {KC_K, KC_COMM, COMBO_END};
-const uint16_t PROGMEM super_combo_r[] = {KC_L, KC_DOT, COMBO_END};
+const uint16_t PROGMEM shift_combo_l[] = {KC_T, KC_G, COMBO_END};
+const uint16_t PROGMEM ctrl_combo_l[] = {KC_R, KC_F, COMBO_END};
+const uint16_t PROGMEM alt_combo_l[] = {KC_E, KC_D, COMBO_END};
+const uint16_t PROGMEM super_combo_l[] = {KC_W, KC_S, COMBO_END};
+const uint16_t PROGMEM shift_combo_r[] = {KC_Y, KC_H, COMBO_END};
+const uint16_t PROGMEM ctrl_combo_r[] = {KC_U, KC_J, COMBO_END};
+const uint16_t PROGMEM alt_combo_r[] = {KC_I, KC_K, COMBO_END};
+const uint16_t PROGMEM super_combo_r[] = {KC_O, KC_L, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(shift_combo_l, KC_LSFT),
