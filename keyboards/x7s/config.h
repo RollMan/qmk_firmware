@@ -15,5 +15,4 @@
 #undef  SPLIT_USB_DETECT
 
 #define TAPPING_TERM 120
-#define TAPPING_FORCE_HOLD
 #define QUICK_TAP_TERM 0
